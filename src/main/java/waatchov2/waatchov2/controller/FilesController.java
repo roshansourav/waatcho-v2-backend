@@ -23,4 +23,9 @@ public class FilesController {
     public List<String> ListURL(){
         return service.ListURL();
     }
+
+    @GetMapping("/getAllVideoList")
+    public List<FilesEntity> getAllVideoList(){
+        return service.getAllVideoList();
+    }
 }

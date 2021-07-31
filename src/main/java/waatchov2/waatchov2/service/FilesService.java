@@ -21,4 +21,8 @@ public class FilesService {
     public List<String> ListURL(){
         return repository.ListURL();
     }
+
+    public List<FilesEntity> getAllVideoList(){
+        return repository.findAll();
+    }
 }
